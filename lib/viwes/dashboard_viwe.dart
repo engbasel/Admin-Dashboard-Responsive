@@ -15,7 +15,7 @@ class DashBoard_view extends StatelessWidget {
         return Container();
       },
       desktopLayout: (context) {
-        return const DashboardDesktopLayoutViwe();
+        return const DashboardDesktopLayoutView();
       },
     );
   }

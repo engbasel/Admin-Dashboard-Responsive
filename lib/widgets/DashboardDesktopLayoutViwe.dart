@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/widgets/CoustomDrawer.dart';
 
-class DashboardDesktopLayoutViwe extends StatelessWidget {
-  const DashboardDesktopLayoutViwe({super.key});
+class DashboardDesktopLayoutView extends StatelessWidget {
+  const DashboardDesktopLayoutView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: Row(
+        children: [
+          Expanded(
+            child: CustomDrawer(),
+          ),
+        ],
+      ),
+    );
   }
 }
