@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/modules/drawerItemModel.dart';
 import 'package:responsive_dashboard/utils/app_images.dart';
-import 'package:responsive_dashboard/widgets/DrawerItem.dart';
+import 'package:responsive_dashboard/widgets/Drawer/DrawerItem.dart';
 
 class DrawerItemListView extends StatefulWidget {
   const DrawerItemListView({

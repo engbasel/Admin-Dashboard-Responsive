@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/appStay.dart';
-import 'package:responsive_dashboard/widgets/RangeMonthsOptions.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/RangeMonthsOptions.dart';
 
 class AllExpansesHeader extends StatelessWidget {
   const AllExpansesHeader({super.key});

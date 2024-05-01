@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/AllExpansesHeader.dart';
-import 'package:responsive_dashboard/widgets/AllExpinsesItemListView.dart';
-import 'package:responsive_dashboard/widgets/CoustomBasckGroundcontainer.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpansesHeader.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpinsesItemListView.dart';
+import 'package:responsive_dashboard/widgets/Genral/CoustomBasckGroundcontainer.dart';
 
 class AllExpenses extends StatelessWidget {
   const AllExpenses({super.key});

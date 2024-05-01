@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/modules/AllExpinsesItemModel.dart';
 import 'package:responsive_dashboard/utils/app_images.dart';
-import 'package:responsive_dashboard/widgets/AllExpinsesItem.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpinsesItem.dart';
 
 class AllExpinsesListVeiw extends StatefulWidget {
   const AllExpinsesListVeiw({super.key});

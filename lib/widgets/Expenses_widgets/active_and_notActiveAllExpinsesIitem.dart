@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/modules/AllExpinsesItemModel.dart';
 import 'package:responsive_dashboard/utils/appStay.dart';
-import 'package:responsive_dashboard/widgets/AllExpensesItemHeader.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpensesItemHeader.dart';
 
 class InactiveAllExpinsesItem extends StatelessWidget {
   const InactiveAllExpinsesItem({

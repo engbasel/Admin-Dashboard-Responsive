@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/AllExpenses.dart';
-import 'package:responsive_dashboard/widgets/CoustomDrawer.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpenses.dart';
+import 'package:responsive_dashboard/widgets/Drawer/CoustomDrawer.dart';
 
 class DashboardDesktopLayoutView extends StatelessWidget {
   const DashboardDesktopLayoutView({super.key});

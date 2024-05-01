@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/modules/drawerItemModel.dart';
 import 'package:responsive_dashboard/viwes/widgets/userinfolisttitle.dart';
-import 'package:responsive_dashboard/widgets/Active_NotActive_items.dart';
-import 'package:responsive_dashboard/widgets/DrawerItemsListViwe.dart';
-import '../utils/app_images.dart';
+import 'package:responsive_dashboard/widgets/Expenses_widgets/Active_NotActive_items.dart';
+import 'package:responsive_dashboard/widgets/Drawer/DrawerItemsListViwe.dart';
+import '../../utils/app_images.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
