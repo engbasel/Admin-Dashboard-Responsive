@@ -9,10 +9,18 @@ class DashBoard_view extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdaptiveLayout(
       mobileLayout: (context) {
-        return Container();
+        return Container(
+          child: const Center(
+            child: Text('mobileLayout'),
+          ),
+        );
       },
       tabletLayout: (context) {
-        return Container();
+        return Container(
+          child: const Center(
+            child: Text('tabletLayout'),
+          ),
+        );
       },
       desktopLayout: (context) {
         return const DashboardDesktopLayoutView();

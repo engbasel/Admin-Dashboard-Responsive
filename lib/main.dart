@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/MyCustomScrollBehavior.dart';
 import 'package:responsive_dashboard/viwes/dashboard_viwe.dart';
 
 void main(List<String> args) {
@@ -10,9 +11,10 @@ class responsive_dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: DashBoard_view(),
-      routes: {},
+    return MaterialApp(
+      scrollBehavior: MyCustomScrollBehavior(),
+      home: const DashBoard_view(),
+      routes: const {},
     );
   }
 }
