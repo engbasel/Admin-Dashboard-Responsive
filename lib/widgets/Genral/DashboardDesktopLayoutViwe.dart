@@ -1,30 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/utils/appStay.dart';
-import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpenses.dart';
 import 'package:responsive_dashboard/widgets/Drawer/CoustomDrawer.dart';
 import 'package:responsive_dashboard/widgets/Genral/QuickInvoiceAndAllExpenses.dart';
-import 'package:responsive_dashboard/widgets/Quickinvoice/QuickInvoice.dart';
+import 'package:responsive_dashboard/widgets/Income/income_section.dart';
+import 'package:responsive_dashboard/widgets/Transaction%20History/my_cards_and_transction_history_section.dart';
 
-class DashboardDesktopLayoutView extends StatelessWidget {
-  const DashboardDesktopLayoutView({super.key});
+class DashboardDesktopLayout extends StatelessWidget {
+  const DashboardDesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xfff7f9fa),
-      body: Row(
-        children: [
-          Expanded(
-            flex: 1,
-            child: CustomDrawer(),
+    return const Row(
+      children: [
+        Expanded(child: CustomDrawer()),
+        SizedBox(
+          width: 32,
+        ),
+        Expanded(
+          flex: 3,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 1),
+                          child: QuickInvoiceAndAllExpensesSection(),
+                        )),
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          SizedBox(height: 100),
+                          MyCardsAndTransctionHistorySection(),
+                          SizedBox(
+                            height: 24,
+                          ),
+                          Expanded(child: IncomeSection()),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
           ),
-          SizedBox(width: 32),
-          Expanded(
-            flex: 2,
-            child: QuickInvoiceAndAllExpensesSection(),
-          ),
-        ],
-      ),
+        )
+      ],
     );
   }
 }
+//     );
+//   }
+// }
+
+
+

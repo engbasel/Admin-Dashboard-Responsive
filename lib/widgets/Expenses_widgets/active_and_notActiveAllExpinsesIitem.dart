@@ -3,38 +3,54 @@ import 'package:responsive_dashboard/modules/AllExpinsesItemModel.dart';
 import 'package:responsive_dashboard/utils/appStay.dart';
 import 'package:responsive_dashboard/widgets/Expenses_widgets/AllExpensesItemHeader.dart';
 
-class InactiveAllExpinsesItem extends StatelessWidget {
-  const InactiveAllExpinsesItem({
+class InActiveAllExpensessItem extends StatelessWidget {
+  const InActiveAllExpensessItem({
     super.key,
-    required this.ItemModelExpenses,
+    required this.itemModel,
   });
 
-  final AllExpinsesItemModel ItemModelExpenses;
+  final AllExpinsesItemModel itemModel;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xff4eb7f2),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+      decoration: ShapeDecoration(
+        color: Colors.white,
+        shape: RoundedRectangleBorder(
+          side: const BorderSide(width: 1, color: Color(0xFFF1F1F1)),
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
-            image: ItemModelExpenses.image,
+            image: itemModel.image,
           ),
-          const SizedBox(height: 30),
-          Text(
-            ItemModelExpenses.title,
-            style: AppStyles.styleMedium16(context),
+          const SizedBox(height: 34),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.title,
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
           const SizedBox(height: 8),
-          Text(
-            ItemModelExpenses.date,
-            style: AppStyles.styleRegular14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(context),
+            ),
           ),
           const SizedBox(height: 16),
-          Text(
-            ItemModelExpenses.price,
-            style: AppStyles.styleSemiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -42,52 +58,63 @@ class InactiveAllExpinsesItem extends StatelessWidget {
   }
 }
 
-class activeAllExpinsesItem extends StatelessWidget {
-  const activeAllExpinsesItem({
+class ActiveAllExpensessItem extends StatelessWidget {
+  const ActiveAllExpensessItem({
     super.key,
-    required this.ItemModelExpenses,
+    required this.itemModel,
   });
 
-  final AllExpinsesItemModel ItemModelExpenses;
+  final AllExpinsesItemModel itemModel;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8),
-      child: Container(
-        decoration: BoxDecoration(
-            color: const Color.fromARGB(199, 248, 102, 5),
-            borderRadius: BorderRadius.circular(9)),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            AllExpensesItemHeader(
-              backGroundColor: Colors.white.withOpacity(0.100000149011612),
-              imageColor: Colors.white,
-              image: ItemModelExpenses.image,
-            ),
-            const SizedBox(height: 30),
-            Text(
-              ItemModelExpenses.title,
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+      decoration: ShapeDecoration(
+        color: const Color(0xFF4DB7F2),
+        shape: RoundedRectangleBorder(
+          side: const BorderSide(width: 1, color: Color(0xFF4DB7F2)),
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AllExpensesItemHeader(
+            backGroundColor: Colors.white.withOpacity(0.10000000149011612),
+            imageColor: Colors.white,
+            image: itemModel.image,
+          ),
+          const SizedBox(height: 34),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.title,
               style: AppStyles.styleMedium16(context).copyWith(
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 8),
-            Text(
-              ItemModelExpenses.date,
-              style: AppStyles.styleRegular14(context)
-                  .copyWith(color: const Color(0xFFFAFAFA)),
-            ),
-            const SizedBox(height: 16),
-            Text(
-              ItemModelExpenses.price,
-              style: AppStyles.styleSemiBold24(context).copyWith(
-                color: Colors.white,
+          ),
+          const SizedBox(height: 8),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(context).copyWith(
+                color: const Color(0xFFFAFAFA),
               ),
             ),
-          ],
-        ),
+          ),
+          const SizedBox(height: 16),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(context)
+                  .copyWith(color: Colors.white),
+            ),
+          ),
+        ],
       ),
     );
   }
