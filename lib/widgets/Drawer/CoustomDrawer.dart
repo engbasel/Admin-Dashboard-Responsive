@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/modules/UserInfoModel.dart';
 import 'package:responsive_dashboard/modules/drawerItemModel.dart';
-import 'package:responsive_dashboard/viwes/widgets/userinfolisttitle.dart';
+import 'package:responsive_dashboard/widgets/Genral/userinfolisttitle.dart';
 import 'package:responsive_dashboard/widgets/Expenses_widgets/Active_NotActive_items.dart';
 import 'package:responsive_dashboard/widgets/Drawer/DrawerItemsListViwe.dart';
 import '../../utils/app_images.dart';

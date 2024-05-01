@@ -1,37 +1,7 @@
-// import 'package:flutter/material.dart';
-// import 'package:responsive_dashboard/widgets/Genral/adaptive_layout_widget.dart';
-// import 'package:responsive_dashboard/widgets/Genral/DashboardDesktopLayoutViwe.dart';
-
-// class DashBoard_view extends StatelessWidget {
-//   const DashBoard_view({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return AdaptiveLayout(
-//       mobileLayout: (context) {
-//         return Container(
-//           child: const Center(
-//             child: Text('mobileLayout'),
-//           ),
-//         );
-//       },
-//       tabletLayout: (context) {
-//         return Container(
-//           child: const Center(
-//             child: Text('tabletLayout'),
-//           ),
-//         );
-//       },
-//       desktopLayout: (context) {
-//         return const DashboardDesktopLayoutView();
-//       },
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
-
 import 'package:responsive_dashboard/utils/size_config.dart';
+import 'package:responsive_dashboard/viwes/dashboard_mobile_layout.dart';
+import 'package:responsive_dashboard/viwes/dashboard_tablet_layout.dart';
 import 'package:responsive_dashboard/widgets/Drawer/CoustomDrawer.dart';
 import 'package:responsive_dashboard/widgets/Genral/DashboardDesktopLayoutViwe.dart';
 import 'package:responsive_dashboard/widgets/Genral/adaptive_layout_widget.dart';
@@ -67,18 +37,10 @@ class _DashBoradViewState extends State<DashBoradView> {
           : null,
       body: AdaptiveLayout(
         mobileLayout: (context) {
-          return Container(
-            child: const Center(
-              child: Text('mobileLayout'),
-            ),
-          );
+          return const DashBoardMobileLayout();
         },
         tabletLayout: (context) {
-          return Container(
-            child: const Center(
-              child: Text('tabletLayout'),
-            ),
-          );
+          return const DashBoardTabletLayout();
         },
         desktopLayout: (context) => const DashboardDesktopLayout(),
       ),
