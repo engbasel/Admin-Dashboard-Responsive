@@ -19,7 +19,9 @@ class QuickInvoiceHeader extends StatelessWidget {
           decoration: BoxDecoration(
             color: const Color(0xFFFAFAFA),
             shape: BoxShape.circle,
-            border: Border.all(),
+            border: Border.all(
+              color: Colors.transparent,
+            ),
           ),
           child: const Icon(
             Icons.add,

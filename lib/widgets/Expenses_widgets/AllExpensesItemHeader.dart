@@ -15,8 +15,8 @@ class AllExpensesItemHeader extends StatelessWidget {
     return Row(
       children: [
         Container(
-          margin: const EdgeInsets.all(10),
-          padding: const EdgeInsets.all(7),
+          margin: const EdgeInsets.all(1),
+          padding: const EdgeInsets.all(1),
           decoration: ShapeDecoration(
             color: backGroundColor ?? Colors.white,
             shape: RoundedRectangleBorder(
@@ -33,7 +33,7 @@ class AllExpensesItemHeader extends StatelessWidget {
         ),
         const Spacer(),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 1),
           child: Transform.rotate(
             angle: -1.57 * 2,
             child: Icon(
