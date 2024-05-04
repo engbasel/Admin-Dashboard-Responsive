@@ -23,7 +23,7 @@ Course Description:
 ```
 
 
-###directory structure:
+### directory structure:
 
 ```plaintext
 lib/
