@@ -42,4 +42,3 @@ lib/
     └── dashboard_view.dart
 ```
 
-This combined representation provides both a clear description of the course and a visual understanding of the directory structure within your project's lib folder.
