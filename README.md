@@ -22,8 +22,10 @@ Course Description:
 └──────────────────────────────────────────────────────────────────┘
 ```
 
+
+###directory structure:
+
 ```plaintext
-directory structure:
 lib/
 ├── models/
 │   ├── AllExpensesItemModel.dart
