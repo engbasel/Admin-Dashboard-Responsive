@@ -1,11 +1,10 @@
 # responsive_dashboard
 
-Certainly! Here's the refactored description with the added graph representing the directory structure:
 
 ### Summary:
 "Mastering Flutter: Responsive & Adaptive UI Design" is an extensive course tailored for developers seeking proficiency in Flutter, Google's UI toolkit. Through this course, participants delve into the realm of crafting visually captivating and supremely functional applications for diverse devices and platforms.
 
-### Refactored Description with Graph:
+
 
 ```plaintext
 Course Description:
@@ -24,6 +23,7 @@ Course Description:
 ```
 
 ```plaintext
+directory structure:
 lib/
 ├── models/
 │   ├── AllExpensesItemModel.dart
